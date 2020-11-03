@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "esNext",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "declaration": false,
+    "removeComments": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "baseUrl": ".",
+    "outDir": "../build/app",
+    "allowSyntheticDefaultImports": true,
+    "lib": ["ES2015", "ES2016"],
+    "paths": {
+      "@/application/*": ["./application/*"],
+      "@/config/*": ["./config/*"],
+      "@/ipc/*": ["./ipc/*"],
+      "@/plugins/*": ["./plugins/*"],
+      "@/resources/*": ["./resources/*"],
+      "@/window/*": ["./window/*"],
+    },
+    "skipLibCheck": true
+  },
+  "exclude": ["build", "node_modules"]
+}
